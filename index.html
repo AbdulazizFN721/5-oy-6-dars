@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/stayl.css">
 </head>
 <body>
-    
-</body>
-</html>
+    <div class="header">
+            <img src="./images/music.jpg" alt="" id cover class="cover">
+        </div>
+        <audio src="./music/music1.mp3"></audio>
+        <div class="controls">
+            <button id="backward">
+                <i class="fa-solid fa-backward-step"></i>
+            </button>
+            <button id="play">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button id="forward">
+                <i class="fa-solid fa-forward-step"></i>
+            </button>
+        </div>
+        <input type="range"
+        class="input1"
+        min="0"
+        max="1"
+        step="0.1"
+        value="0.1"
+        >
+        <script type ="module" src="./js/data.js"></script>
+    </body>
+    </html>
